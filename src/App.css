@@ -1,38 +1,235 @@
-.App {
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-image: url(img); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Ensures the background stays in place when scrolling */
+  min-height: 100vh; /* Ensures the background covers the entire viewport */
+}
+
+/* src/App.css */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: white; /* Change to your desired color */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.navbar {
+  background-color: black; /* Black background for the navbar */
+  padding: 10px 0; /* Padding for the navbar */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white; /* White text color for the links */
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* Section Styles */
+section {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #333;
+  font-size: 2.2em;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section ul li {
+  background-color: #f0f0f0;
+  border-left: 5px solid #8e2de2;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+section ul li:hover {
+  background-color: #e0e0ff;
+}
+
+section ul li img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
   color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+footer a {
+  color: #8e2de2;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
   }
-  to {
-    transform: rotate(360deg);
+
+  section {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+
+  header p a {
+    font-size: 1em;
   }
 }
+
+/* src/App.css */
+.App {
+  background-image: url('./580162-pattern-vertical-portrait_display-digital_art.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #f1c40f; /* Yellow */
+  padding: 20px;
+}
+
+.education {
+  background-color: #3498db; /* Blue */
+  padding: 20px;
+}
+
+.experience {
+  background-color: #e74c3c; /* Red */
+  padding: 20px;
+}
+
+.projects {
+  background-color: #2ecc71; /* Green */
+  padding: 20px;
+}
+
+.skills {
+  background-color: #9b59b6; /* Purple */
+  padding: 20px;
+}
+
+.footer {
+  background-color: #34495e; /* Dark Grey */
+  padding: 20px;
+  color: white; /* Change text color for visibility */
+}
+
+
+/*h1 css */
+/* src/App.css */
+
+/* General styles for h1 elements */
+h5{
+    background-color: #ac6eb7;
+    font-size: 15px; 
+    color: #5c5959; 
+    text-align: left; 
+    margin: 0; 
+    
+  
+}
+h1 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  background-color: #e0e0ff;
+  font-size: 2.5em; /* Adjust size as needed */
+  color: #5c5959; /* White color for contrast */
+  text-align: center; /* Center the text */
+  margin: 0; /* Remove default margin */
+  padding: 20px 0; /* Add padding for spacing */
+}
+
+.header h1 {
+  color: #333; /* Dark color for header */
+}
+
+.education h1 {
+  color: #fff; /* White color for education */
+}
+
+.experience h1 {
+  color: #fff; /* White color for experience */
+}
+
+.projects h1 {
+  color: #fff; /* White color for projects */
+}
+
+.skills h1 {
+  color: #fff; /* White color for skills */
+}
+
+.footer h1 {
+  color: #fff; /* White color for footer */
+}
+
+
